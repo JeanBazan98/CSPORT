@@ -1,0 +1,171 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+#pantalla{
+	background: #e2e2e2;
+	float: left;
+	width: 100%;
+	font-family: ProximaSoft-Bold, sans-serif;
+}
+
+header{
+	float: left;
+	height: 10%;
+	width: 100%;
+    background: #00143c;
+    opacity: .9;
+ 	display: flex;
+	text-align: center;
+    align-items: center;
+    overflow: hidden;
+}header ul{
+	width: 100%;
+	right: 0;
+	top: 0;
+}header ul li{
+	margin: 0 .5rem;
+	list-style: none;
+	float: right;
+}header ul li:nth-child(1){
+	margin-left: 2rem;
+	float: left;
+}header ul li a{ text-decoration: none; color: #f2f2f2; } header ul li a svg{ margin: -.05rem .3rem; }
+header ul li p{
+    float: right;
+    margin-top: -.1rem;
+}
+
+#contenido{
+	width: 100%;
+	background: #e2e2e2;
+	float: left;
+	text-align: center;
+    align-items: center;
+    justify-content: center;
+}#contenido h2{ color: #262626; font-size: 2.5rem; font-weight: 600; width: 100%; margin: 1rem 0rem; }
+#contenido p{ margin-left: calc(50% - 7.75rem); color: #262626; border: .1rem solid #B1D091; float: left; font-size: .8rem; padding: .25rem .75rem; border-radius: .20rem; background: #C3DBAB; width: auto; height: auto; margin-bottom: 1.5rem; z-index: 10; position: relative; }
+#resumen{
+	position: relative;
+	padding: 0rem 1rem 5rem 1rem;
+	width: 25rem;
+	margin-left: calc(50% - 13.5rem);
+	height: 12rem;
+	border-radius: .2rem;
+	background: #fffdf9;
+	float: left;
+	margin-bottom: 1rem;
+}
+#resumen:before {
+    z-index: 1;
+    background: #e2e2e2;
+    border-radius: 50%;
+    box-shadow:
+        22rem 0 0 0 #e2e2e2,
+        0 17rem 0 0 #e2e2e2,
+        22rem 17rem 0 0 #e2e2e2,
+        0 80px 0 -20px #e2e2e2,
+        0 100px 0 -20px #e2e2e2,
+        0 120px 0 -20px #e2e2e2,
+        0 140px 0 -20px #e2e2e2,
+        0 160px 0 -20px #e2e2e2,
+        0 180px 0 -20px #e2e2e2,
+        22rem 80px 0 -20px #e2e2e2,
+        22rem 100px 0 -20px #e2e2e2,
+        22rem 120px 0 -20px #e2e2e2,
+        22rem 140px 0 -20px #e2e2e2,
+        22rem 160px 0 -20px #e2e2e2,
+        22rem 180px 0 -20px #e2e2e2;
+    content: "";
+    display: block;
+    height: 50px;
+    left: -25px;
+    position: absolute;
+    top: -25px;
+    width: 50px;
+}
+
+#resumen h2{ height: auto; float: left; width: 70%; margin-left: 5%; font-size: 1.6rem; margin-top: .5rem; padding-bottom: .75rem; border-bottom: 1px solid #262626; }
+#resumen span{ text-align: left; width: 100%; margin: .25rem 1.5rem; color: #262626; float: left; }
+#resumen h1{ font-size: 1.5rem; float: left; padding-top: .5rem; bottom: 0; left: 0; position: absolute; margin: 1rem 0; width: 90%; margin-left: -4%; color: #262626; }
+
+#design{
+    position: absolute;
+    bottom: .5rem;
+    left: 41.5%;
+    height: auto;
+    display: flex;
+	text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #909090;
+}
+footer{
+    position: relative;
+    background: #f2f2f2;
+    float: left;
+	width: 100%;
+	height: 15rem;
+	font-size: 1rem;
+	font-family: ProximaSoft-Bold, sans-serif;
+	text-decoration: none;
+	color: #00143c;
+}
+    footer #f_logo{
+        width: 30%;
+        height: 100%;
+        background: #304060;
+        float: left;
+    }footer #f_logo img{ width: 5rem; margin-left: calc(50% - 2.5rem); margin-top: 2rem; }
+    footer #f_logo label{
+        color: #f2f2f2;
+        display: flex;
+	    text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 2rem; width: 100%; font-family: EASPORTS, sans-serif;
+    }footer #f_logo span{
+        color: #f2f2f2;
+        display: flex;
+	    text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    footer #f_content{
+        width: 70%;
+        height: 100%;
+        float: left;
+    }footer #f_content content{
+        width: 50%;
+        height: 100%;
+        float: left;
+        background: #d8d8d8;
+        display: flex;
+	    text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }footer #f_content content a{
+        display: flex;
+	    text-align: center;
+        align-items: center;
+        justify-content: center;
+    	float: left;
+    	text-decoration: none;
+    	color: #00143c;
+    	margin: .25rem;
+    }footer content a svg{ margin-right: .25rem; }
+
+
+
+@media (min-width: 900px) {
+    footer { height: 17rem; }
+    footer #f_content content a { width: 85%; }
+	#tutorial{ background-position-y: 0rem; }
+	#t_botones{ margin-left: 3rem; width: 40%; float: right; }
+	#c_tops .top{ width: 20rem; }
+}

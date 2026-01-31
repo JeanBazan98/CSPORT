@@ -1,0 +1,172 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	scrollbar-width: thin;
+}
+body{
+    background: #e2e2e2;
+}
+#pantalla{
+	float: left;
+	width: 100%;
+	font-family: ProximaSoft-Bold, sans-serif;
+}
+
+header{
+	float: left;
+	height: 10%;
+	width: 100%;
+    background: #00143c;
+    opacity: .9;
+ 	display: flex;
+	text-align: center;
+    align-items: center;
+    overflow: hidden;
+}header ul{
+	width: 100%;
+	right: 0;
+	top: 0;
+}header ul li{
+	margin: 0 .5rem;
+	list-style: none;
+	float: right;
+}header ul li:nth-child(1){
+	margin-left: 2rem;
+	float: left;
+}header ul li a{ text-decoration: none; color: #f2f2f2; } header ul li a svg{ margin: -.05rem .3rem; }
+header ul li p{
+    float: right;
+    margin-top: -.1rem;
+}
+
+#contenido{
+	width: 100%;
+	background: #e2e2e2;
+	float: left;
+
+}#fase-e{ display: none; }
+    #contenido header{
+        margin: 1rem;
+        width: calc(100% - 4rem);
+        height: auto;
+        background: #f2f2f2;
+        font-size: 1.4rem;
+        padding: 1rem;
+        float: left;
+    }#contenido header:nth-child(2){ width: calc(70% - 4rem) !important; margin-top: 0rem; margin-bottom: 0rem; }
+    #contenido header span{ padding-bottom: .25rem; cursor: pointer; margin: 0 1rem 0 0; font-size: 1.2rem; font-weight: 600; }
+    .f-activa{
+        border-bottom: .2rem solid #262626;
+    }
+    
+    #contenido content{
+        margin: 0 1rem;
+        padding: 1rem;
+        width: calc(70% - 4rem);
+        height: auto;
+        background: #f2f2f2;
+        float: left;
+    }#contenido content h4{ margin: 0 0 .5rem 0; }
+        .enf{
+            overflow: hidden;
+            width: calc(100% - 2rem);
+            margin: .3rem 1rem;
+            height: 3rem;
+            background: #f2f2f2;
+            box-shadow: 2px 2px 5px #BCBCBC;
+            float: left;
+            display: flex;
+            text-align: center;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .enf img{
+            margin: .5rem 1rem;
+            width: 2rem;
+            height: 2rem;
+            float: left;
+        }
+        .enf .name1{
+            overflow: hidden;
+            width: 10rem;
+            height: 100%;
+            float: left;
+            display: flex;
+            text-align: right;
+            justify-content: flex-end;
+            align-items: center;
+        }.enf .name2{
+            overflow: hidden;
+            width: 10rem;
+            height: 100%;
+            float: left;
+            display: flex;
+            text-align: left;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .enf span{
+            width: 4rem;
+            height: 100%;
+            margin: 0 .75rem;
+            padding: 0 .25rem;
+            float: left;
+            background: #BCBCBC;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }.enf a{
+            color: #262626;
+            text-decoration: none;
+            width: auto;
+            height: 100%;
+            margin: 1rem;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }.enf svg{ margin-right: .25rem; }
+    
+    sidebar{
+        overflow: hidden;
+        width: calc(30% - 1rem);
+        height: auto;
+        margin: 0rem 1rem 1rem 0rem;
+        background: #f2f2f2;
+        float: right;
+    }
+        sidebar h3{
+            width: 100%;
+            float: left;
+            padding: 1rem 1rem 0 1rem;
+        }
+        sidebar p{
+            width: 100%;
+            float: left;
+            padding: .5rem 1rem 1rem 1rem;
+        }
+button{
+    border: 0;
+    border-radius: .2rem;
+    background: #262626;
+    color: #f2f2f2;
+    margin: 1rem 1rem;
+    width: calc(100% - 2rem);
+    font-weight: 600;
+    height: 1.25rem;
+    float: left;
+    padding: 1.25rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (min-width: 900px) {
+	#tutorial{ background-position-y: 0rem; }
+	#t_botones{ margin-left: 3rem; width: 40%; float: right; }
+	#c_tops .top{ width: 20rem; }
+}

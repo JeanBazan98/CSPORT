@@ -1,0 +1,295 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	--color1: #baff29;
+    --color2: #1a1b41;
+}
+
+#errornc{
+    margin-top: -1.1rem;
+    margin-left: .75rem;
+    position: absolute;
+    font-size: .9rem;
+    color: red;
+    display: none;
+}
+#btn-modal{
+    display: none;
+}.container-modal{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}.content-modal{
+    width: 100%;
+    max-width: 700px;
+    padding: 1.2rem;
+    background-color: #f2f2f2;
+    border-radius: .5rem;
+}.content-modal h1{
+	display: flex;
+    margin-bottom: 1rem;
+    margin-left: .25rem;
+}.content-modal form input{
+    width: 50%;
+    margin-left: calc(25% - .25rem);
+    height: 1.25rem;
+    float: left;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding: .25rem .5rem;
+}.content-modal form label{
+    width: 100%;
+    height: auto;
+    float: left;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: .5rem 0;
+}.content-modal form button{
+    font-family: EASPORTS, sans-serif !important;
+    border: 0;
+    border-radius: .2rem;
+    background: #262626;
+    color: #f2f2f2;
+    margin: 1.5rem;
+    width: 35%;
+    margin-left: calc(37.5% - 1.5rem);
+    height: 1.25rem;
+    float: left;
+    padding: 1.25rem 5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.cerrar-modal{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+}
+
+#btn-modal2{
+    display: none;
+}.container-modal2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal2:checked ~ .container-modal2{
+    display: none;
+}.content-modal2{
+    width: 100%;
+    max-width: 600px;
+    padding: 1.2rem 1.2rem 0rem 1.2rem;
+    background-color: #f2f2f2;
+    border-radius: .5rem;
+}.content-modal2 h1{
+    margin-bottom: 1rem;
+    margin-left: .25rem;
+}.content-modal2 form label{
+    width: 100%;
+    height: auto;
+    float: left;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: .5rem 0;
+}.content-modal2 form input{
+    width: 50%;
+    margin-left: calc(25% - .25rem);
+    height: 1.25rem;
+    float: left;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding: .25rem .5rem;
+}.content-modal2 form button{
+    font-family: EASPORTS, sans-serif !important;
+    border: 0;
+    border-radius: .2rem;
+    background: #262626;
+    color: #f2f2f2;
+    margin: 1.5rem;
+    width: 35%;
+    margin-left: calc(37.5% - 1.5rem);
+    height: 1.25rem;
+    float: left;
+    padding: 1.25rem 5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}.cerrar-modal2{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+#pantalla{
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	font-family: ProximaSoft-Bold, sans-serif;
+}
+
+
+#tutorial{
+	overflow: hidden;
+	width: 40%;
+	height: calc(100%);
+  	background: transparent;
+	float: left;
+}#tutorial img{ height: 100%; }
+
+#error{
+	position: absolute;
+	color: #f2f2f2;
+	top: 0;
+	right: 0;
+	width: auto;
+	height: 1.5rem;
+	background: #262626;
+	display: flex;
+	text-align: center;
+  	align-items: center;
+  	padding: .75rem 1rem;
+  	margin-top: .15rem;
+  	border-left: .25rem solid #c2c2c2;
+  	display: none;
+}
+
+.passeye{
+    float: left;
+    margin-top: .4rem;
+    margin-left: -1.5rem;
+    z-index: 10;
+    cursor: pointer;
+}#lpass1r, #rpass1r, #rpass2r{ display: none; }
+#l_register{ display: none; }
+#cerrar{ width: 1.5rem; height: 1.5rem; margin-left: calc(50% - 1rem); }
+#cerrar svg{ padding: .25rem; background: var(--color2); border-radius: 2rem; margin-top: -3.5rem;
+	margin-bottom: 2.5rem; width: 100%; height: 100%; float: left; }
+#login{
+	position: relative;
+	width: 60%;
+	height: 100%;
+	background: #f2f2f2;
+	float: left;
+	display: flex;
+	text-align: center;
+  	align-items: center;
+  	color: #262626;
+}#login h1{ width: 100%; float: left; margin: 0rem 0rem 2rem 0rem; }
+#login label{ color: #a9a9a9; width: 100%; float: left; margin: .5rem 0 .25rem 0; }
+#login input{
+	display: flex;
+	text-align: center;
+  	align-items: center;
+	width: 50%;
+	border: 1px solid #a9a9a9;
+	border-radius: .25rem;
+	float: left;
+	margin: .1rem 0;
+	margin-left: calc(25% - 1.1rem);
+	padding: .35rem 1rem;
+}#login p{ width: 100%; float: left; margin: 1rem 0 -2rem 0; }
+#login a{ width: 100%; float: left; margin-top: 2rem; text-decoration: none; color: #262626; }
+#login #login_b{
+    font-family: EASPORTS, sans-serif !important;
+	color: #f2f2f2;
+  	border: 0;
+  	font-weight: bold;
+  	border-top-left-radius: .5rem;
+ 	border-bottom-right-radius: .5rem;
+	background: var(--color2);
+	width: 50%;
+	padding: .75rem;
+	text-align: center;
+	justify-content: center;
+	float: left;
+	margin-top: 2rem;
+	margin-left: calc(50% - 25% - .25rem);
+	box-shadow: .05rem .05rem .05rem #262626;
+	cursor: pointer;
+}#login #login_b:hover{ opacity: .9; }
+#login #register_b{
+    font-family: EASPORTS, sans-serif !important;
+	color: #f2f2f2;
+  	border: 0;
+  	font-weight: bold;
+  	border-top-left-radius: .5rem;
+ 	border-bottom-right-radius: .5rem;
+	background: var(--color2);
+	width: 50%;
+	padding: .75rem;
+	text-align: center;
+	justify-content: center;
+	float: left;
+	margin-top: 2rem;
+	margin-left: calc(50% - 25% - .25rem);
+	box-shadow: .05rem .05rem .05rem #262626;
+	cursor: pointer;
+}#login #register_b:hover{ opacity: .9; }
+    #l_register span{
+        padding: .5rem;
+        float: left;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: left;
+        align-items: center;
+    }#l_register span input{ float: left !important; width: auto !important; }#l_register span h5{ float: left; margin-left: .5rem; }#l_register span a{ width: auto !important; margin-top: 0 !important; }
+
+
+@media (min-width: 900px) {
+	#t_botones{ margin-left: 3rem; width: 40%; float: right; }
+	#t_botones p{ text-align: right; }
+	#t_botones a{	float: right; }
+	#c_tops .top{ width: 20rem; }
+}
+@media (max-width: 700px) {
+    #tutorial{ display: none; }
+	#login{ width: 100%; border-top-left-radius: 0rem; border-bottom-left-radius: 0rem; }
+	#l_register span{ width: 90%; }
+}
